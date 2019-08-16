@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                tools:context=".MainActivity">
+
+   <ImageView
+           android:id="@+id/imgView"
+           android:layout_width="match_parent"
+           android:layout_height="220dp"
+           app:layout_constraintTop_toTopOf="parent"
+           android:scaleType="centerCrop"/>
+
+   <TextView
+           android:id="@+id/txt_nome_atracao"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintLeft_toLeftOf="parent"
+           android:layout_marginLeft="16dp"
+           android:layout_marginTop="16dp"
+           android:textSize="24sp"
+           android:text="Estatua de São Francisco"/>
+
+   <TextView android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="16dp"
+             app:layout_constraintTop_toBottomOf="@id/txt_nome_atracao"
+             android:textSize="18dp"
+             android:text="Inaugurado em: 04/05/2005"/>
+
+   <TextView android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             app:layout_constraintRight_toRightOf="parent"
+             app:layout_constraintBottom_toBottomOf="parent"
+             android:layout_marginRight="16dp"
+             android:layout_marginBottom="16dp"
+             android:text="Definir rota"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

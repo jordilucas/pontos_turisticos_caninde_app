@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">Pontos Turisticos - Caninde</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida pharetra turpis sed
+        accumsan. Etiam sed venenatis nisi. Ut et mauris blandit risus commodo finibus a ut nunc. Etiam gravida enim
+        quis suscipit dapibus. Nam nec ex est. Cras quis fringilla tortor. Proin viverra, urna vel posuere eleifend,
+        neque ante suscipit nisl, et scelerisque sem justo at risus. Ut pulvinar, nibh vitae euismod gravida, risus diam
+        pellentesque odio, nec tempus neque quam a ex. Maecenas metus orci, tempor vitae malesuada tristique, tincidunt
+        cursus tortor. Nam mi mauris, venenatis a tincidunt vel, feugiat at risus.
+    </string>
 </resources>
