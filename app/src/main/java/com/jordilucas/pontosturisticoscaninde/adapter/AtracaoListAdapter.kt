@@ -11,13 +11,14 @@ import com.jordilucas.pontosturisticoscaninde.extensions.loadUrl
 import kotlinx.android.synthetic.main.item_list_atracoes.view.*
 import kotlinx.android.synthetic.main.progress.view.*
 
-class AtracaoListAdapter(private val atracaoList : List<Atracao>, private val context : Context )
+class AtracaoListAdapter(private val atracaoList : List<Atracao>)
         : RecyclerView.Adapter<AtracaoListAdapter.ViewHolder>(){
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.item_list_atracoes, parent, false)
+        val view = LayoutInflater.from(parent.context).inflate(R.layout.item_list_atracoes,
+            parent, false)
         return ViewHolder(view)
     }
 

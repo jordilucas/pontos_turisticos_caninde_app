@@ -5,7 +5,7 @@ import com.jordilucas.pontosturisticoscaninde.service.retrofitInterface.PontosTu
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitInitializer{
+object RetrofitInitializer{
     private val retrofit = Retrofit.Builder()
         .baseUrl("https://ponto-turisticos.herokuapp.com/")
         .addConverterFactory(GsonConverterFactory.create())
