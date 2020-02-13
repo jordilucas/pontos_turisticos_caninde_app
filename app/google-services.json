@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "63543528451",
+    "firebase_url": "https://ponto-turisticos-26735.firebaseio.com",
+    "project_id": "ponto-turisticos-26735",
+    "storage_bucket": "ponto-turisticos-26735.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:63543528451:android:5c08b6cb14f58be0845236",
+        "android_client_info": {
+          "package_name": "com.jordilucas.pontosturisticoscaninde"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "63543528451-h6ku0u2qdimd6b25o1nv6i360etof1ae.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.jordilucas.pontosturisticoscaninde",
+            "certificate_hash": "8bfba0afa7b87e44654627b2cd7491358626e10e"
+          }
+        },
+        {
+          "client_id": "63543528451-l5dr0ak7c4fkc9l4qgvb0kku6do18vs8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkb1do-cpoFusS1c2GvMcvqiSv2YwUUW0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "63543528451-l5dr0ak7c4fkc9l4qgvb0kku6do18vs8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
