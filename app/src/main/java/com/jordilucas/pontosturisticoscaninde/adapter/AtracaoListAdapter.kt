@@ -1,17 +1,16 @@
 package com.jordilucas.pontosturisticoscaninde.adapter
 
-import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.google.firebase.firestore.QuerySnapshot
 import com.jordilucas.pontosturisticoscaninde.R
-import com.jordilucas.pontosturisticoscaninde.dto.Atracao
-import com.jordilucas.pontosturisticoscaninde.extensions.loadUrl
 import kotlinx.android.synthetic.main.item_list_atracoes.view.*
-import kotlinx.android.synthetic.main.progress.view.*
 
-class AtracaoListAdapter(private val atracaoList : List<Atracao>)
+class AtracaoListAdapter(
+    private val atracoes: List<String>
+)
         : RecyclerView.Adapter<AtracaoListAdapter.ViewHolder>(){
 
     class ViewHolder(itemView : View) : RecyclerView.ViewHolder(itemView)
@@ -22,18 +21,12 @@ class AtracaoListAdapter(private val atracaoList : List<Atracao>)
         return ViewHolder(view)
     }
 
-    override fun getItemCount() = atracaoList.size
-
-
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+   override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val view = holder.itemView
-        val atracao = atracaoList[position]
-
+        val atracao = atracoes[position]
         with(view){
-            txt_nome_atracao.text = atracao.nome
-            txt_hrs_func.text = atracao.horario_func
-            imgView.loadUrl(atracao.foto, view.progress)
+            txt_nome_atracao.text = atracao
         }
     }
-
+    override fun getItemCount() = atracoes.size
 }

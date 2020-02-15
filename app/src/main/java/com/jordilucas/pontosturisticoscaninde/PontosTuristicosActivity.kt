@@ -3,6 +3,7 @@ package com.jordilucas.pontosturisticoscaninde
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.fragment.app.Fragment
+import androidx.multidex.MultiDexApplication
 import com.jordilucas.pontosturisticoscaninde.fragments.AtracaoFragments
 
 class PontosTuristicosActivity : AppCompatActivity() {
